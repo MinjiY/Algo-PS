@@ -1,8 +1,4 @@
 package BFS;
-/*
-    [BOJ] 16953 A->B
-    BFS 풀이
- */
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
@@ -30,7 +26,7 @@ public class BOJ_16953 {
                 //찾음
                 ans = cnt;
                 return;
-            }else if(curNode.length() > B.length()){
+            }else if(Long.parseLong(curNode) > Long.parseLong(B)){
                 continue;
             }
             else{
