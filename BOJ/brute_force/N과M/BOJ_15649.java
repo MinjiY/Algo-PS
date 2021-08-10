@@ -20,6 +20,7 @@ public class BOJ_15649 {
                 System.out.print(selected[i]+" ");
             }
             System.out.println();
+            return;
         }
 
         for(int i=1; i<=N; ++i){
@@ -39,8 +40,8 @@ public class BOJ_15649 {
 
         N = stoi(st.nextToken());
         M = stoi(st.nextToken());
-        visit = new boolean[10];
-        selected = new int[10];
+        visit = new boolean[N+1];
+        selected = new int[M+1];
 
         permutation(0);
 
