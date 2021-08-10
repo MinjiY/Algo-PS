@@ -11,15 +11,18 @@ public class BOJ_15649 {
     static int N, M;
     static int selected[];
     static boolean visit[];
+    static StringBuilder sb = new StringBuilder();
     static int stoi(String token){
         return Integer.parseInt(token);
     }
     static void permutation(int cnt){
         if(cnt == M){
             for(int i=0; i<M; ++i){
-                System.out.print(selected[i]+" ");
+                sb.append(selected[i]+" ");
+                //System.out.print(selected[i]+" ");
             }
-            System.out.println();
+            sb.append("\n");
+            //System.out.println();
             return;
         }
 
@@ -44,6 +47,6 @@ public class BOJ_15649 {
         selected = new int[M+1];
 
         permutation(0);
-
+        System.out.print(sb);
     }
 }
